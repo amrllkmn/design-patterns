@@ -1,0 +1,31 @@
+{
+  "name": "strategy-pattern",
+  "version": "1.0.0",
+  "description": "A design patterns that defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "npm run build && node build/index.js",
+    "start:dev": "nodemon",
+    "lint": "eslint . --ext .ts",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.8.3",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "eslint-config-airbnb-base": "^15.0.0"
+  }
+}
