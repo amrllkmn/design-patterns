@@ -1,6 +1,6 @@
-import { Observer } from './observer';
+import Observer from './observer';
 
-export interface Subject {
+export default interface Subject {
   registerObserver(observer: Observer): void;
   removeObserver(observer: Observer): void;
   notifyObserver(): void;
