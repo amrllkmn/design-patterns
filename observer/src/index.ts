@@ -7,9 +7,9 @@ function main() {
   const currentDisplay = new CurrentConditionsDisplay(weatherData);
   const statisticsDisplay = new StatisticsDisplay(weatherData);
 
-  weatherData.setMeasurement(30.4, 65, 80);
-  weatherData.setMeasurement(29.2, 70, 82);
-  weatherData.setMeasurement(29.2, 90, 78);
+  weatherData.setMeasurement(80, 65, 30.4);
+  weatherData.setMeasurement(82, 70, 29.2);
+  weatherData.setMeasurement(78, 90, 29.2);
 }
 
 main();

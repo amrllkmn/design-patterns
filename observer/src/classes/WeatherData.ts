@@ -39,9 +39,9 @@ export default class WeatherData implements Subject {
   }
 
   setMeasurement(
+    temperature: number,
     humidity: number,
-    pressure: number,
-    temperature: number
+    pressure: number
   ): void {
     this.humidity = humidity;
     this.pressure = pressure;
