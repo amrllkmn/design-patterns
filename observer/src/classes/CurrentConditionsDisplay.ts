@@ -24,9 +24,9 @@ export default class CurrentConditionsDisplay
     );
   }
 
-  update(temp: number, humidity: number, pressure: number): void {
-    this.temperature = temp;
-    this.humidity = humidity;
+  update(): void {
+    this.temperature = this.weatherData.getTemperature();
+    this.humidity = this.weatherData.getHumidity();
     this.display();
   }
 }

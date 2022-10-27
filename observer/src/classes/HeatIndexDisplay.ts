@@ -64,9 +64,9 @@ export default class HeatIndexDisplay implements Observer, DisplayElement {
     console.log(`Heat index is ${index}`);
   }
 
-  update(temp: number, humidity: number, pressure: number): void {
-    this.temperature = temp;
-    this.humidity = humidity;
+  update(): void {
+    this.temperature = this.weatherData.getTemperature();
+    this.humidity = this.weatherData.getHumidity();
     this.display();
   }
 }

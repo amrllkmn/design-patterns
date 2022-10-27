@@ -32,8 +32,8 @@ export default class StatisticsDisplay implements Observer, DisplayElement {
     );
   }
 
-  update(temp: number, humidity: number, pressure: number): void {
-    this.temperatures.push(temp);
+  update(): void {
+    this.temperatures.push(this.weatherData.getTemperature());
     this.display();
   }
 }
